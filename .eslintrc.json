@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "react/jsx-key": "off"
+  }
 }
