@@ -1,6 +1,5 @@
 import Card from '@/components/Card'
 import Navbar from '@/components/Navbar'
-import styles from '@/styles/Home.module.css'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 
@@ -35,10 +34,6 @@ export default function Home() {
           {carInfo && carInfo.map(car => <Card key={car._id} {...car} />)}
         </div>
       </main>
-
-      <footer className={styles.footer}>
-
-      </footer>
     </div>
   )
 }
