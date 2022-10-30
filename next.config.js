@@ -2,7 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: { domains: ['http2.mlstatic.com'], formats: ['image/avif', 'image/webp'], }
+  images: {
+    domains: ['http2.mlstatic.com', 'localhost', 'C:/fakepath/'],
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+        port: '',
+        pathname: 'C:/**',
+      },
+    ]
+  }
 }
 
-module.exports = nextConfig
+export default nextConfig

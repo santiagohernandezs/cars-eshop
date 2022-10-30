@@ -5,6 +5,7 @@
       "error",
       "single"
     ],
-    "react/jsx-key": "off"
+    "react/jsx-key": "off",
+    "import/no-anonymous-default-export": "off"
   }
 }
