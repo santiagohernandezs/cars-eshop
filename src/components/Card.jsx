@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-export default function Card({ image, price, age, km, description, location, _id }) {
+export default function Card({ image, price, details: { odometer, age }, description, location, _id }) {
 
     const router = useRouter()
 
@@ -19,7 +19,7 @@ export default function Card({ image, price, age, km, description, location, _id
                     <h2>${price}</h2>
                 </div>
                 <div className='text-sm -mt-5'>
-                    <span>{age} | {km}km</span>
+                    <span>{age} | {odometer}km</span>
                 </div>
                 <div>
                     <span>{description}</span>
